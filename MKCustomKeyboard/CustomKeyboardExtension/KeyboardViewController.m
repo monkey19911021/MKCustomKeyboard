@@ -68,7 +68,7 @@
         {
             [self.textDocumentProxy insertText: [btn titleForState: UIControlStateNormal]]; //插入文本
             if(btn.tag == 114){
-                //计算
+                //TODO: 计算
                 
             }
         }
