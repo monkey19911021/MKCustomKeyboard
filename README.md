@@ -118,17 +118,3 @@ for(UIButton *btn in [keyBoardView subviews]){
 Demo：[https://github.com/monkey19911021/MKCustomKeyboard](https://github.com/monkey19911021/MKCustomKeyboard)
 <br>
 
-
-P.S. 喜欢就分享或者点个赞呗
-
-<!-- 网易云跟帖 -->
-<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: document.location.href, 
-    sourceId: "",
-    productKey: "ed9b8d43dc944e809d5c088decaffc0a",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
