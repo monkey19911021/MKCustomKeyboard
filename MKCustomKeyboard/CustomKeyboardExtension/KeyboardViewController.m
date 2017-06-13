@@ -26,6 +26,12 @@
     [super viewDidLoad];
     
     keyBoardView = [[UINib nibWithNibName:@"Keyboard" bundle: nil] instantiateWithOwner:nil options:nil][0];
+    keyBoardView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 220);
+    for(UIView *btn in [keyBoardView subviews]){
+        if([btn isKindOfClass: [UIButton class]]){
+            btn.layer.cornerRadius = btn.frame.size.height/2;
+        }
+    }
     [self.view addSubview: keyBoardView];
     
     for(UIButton *btn in [keyBoardView subviews]){
@@ -41,16 +47,6 @@
     // Dispose of any resources that can be recreated
 }
 
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    keyBoardView.frame = CGRectMake(0, 0, self.view.frame.size.width, 220);
-    for(UIView *btn in [keyBoardView subviews]){
-        if([btn isKindOfClass: [UIButton class]]){
-            btn.layer.cornerRadius = btn.frame.size.height/2;
-        }
-    }
-}
-
 -(void)keyDidClick:(UIButton *)btn {
     switch (btn.tag) {
         case 116:
@@ -64,7 +60,7 @@
         }
             break;
         case 120:{
-            [self.textDocumentProxy insertText: @"\n"];
+            [self.textDocumentProxy insertText: @"\n"]; //按下发送键，即 returnKey
         }
             break;
             
@@ -97,3 +93,4 @@
 }
 
 @end
+
