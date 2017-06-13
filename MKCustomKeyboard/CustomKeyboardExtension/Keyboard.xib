@@ -209,6 +209,17 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBH-Td-Jf6">
+                    <rect key="frame" x="16" y="112" width="90" height="44"/>
+                    <color key="backgroundColor" red="0.1843137255" green="0.1647058824" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="4IT-Yu-XdO"/>
+                        <constraint firstAttribute="height" constant="44" id="n9X-SC-Ccj"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -233,6 +244,7 @@
                 <constraint firstAttribute="trailing" secondItem="QKM-Yk-B6K" secondAttribute="trailing" constant="16" id="NXc-3e-Hcs"/>
                 <constraint firstItem="QAl-J6-CAl" firstAttribute="top" secondItem="LCt-Gf-XdF" secondAttribute="bottom" constant="8" id="TEN-MC-zHh"/>
                 <constraint firstItem="1bH-OJ-0Qj" firstAttribute="top" secondItem="2g6-52-Aau" secondAttribute="bottom" constant="8" id="Tft-AH-7mk"/>
+                <constraint firstItem="dBH-Td-Jf6" firstAttribute="leading" secondItem="c3Q-mI-7nu" secondAttribute="leading" constant="16" id="U6v-cI-q09"/>
                 <constraint firstItem="QzJ-ZN-Jl3" firstAttribute="top" secondItem="c3Q-mI-7nu" secondAttribute="top" constant="8" id="Vy9-9v-Y5V"/>
                 <constraint firstItem="Wve-RI-TtI" firstAttribute="top" secondItem="QzJ-ZN-Jl3" secondAttribute="bottom" constant="8" id="WE7-zz-ApM"/>
                 <constraint firstItem="C89-3s-Laa" firstAttribute="top" secondItem="5ax-qR-eSW" secondAttribute="bottom" constant="8" id="ZTz-Gc-sds"/>
@@ -254,9 +266,10 @@
                 <constraint firstItem="OHm-3Z-2oz" firstAttribute="top" secondItem="c3Q-mI-7nu" secondAttribute="top" constant="8" id="sk6-0v-Es8"/>
                 <constraint firstItem="rAf-hX-C7X" firstAttribute="top" secondItem="c3Q-mI-7nu" secondAttribute="top" constant="8" id="tmy-WH-aQy"/>
                 <constraint firstItem="dnV-Sf-K8a" firstAttribute="top" secondItem="rAf-hX-C7X" secondAttribute="bottom" constant="8" id="x7T-2R-aWZ"/>
+                <constraint firstItem="dBH-Td-Jf6" firstAttribute="top" secondItem="QAl-J6-CAl" secondAttribute="bottom" constant="8" id="yge-vu-leK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-101.5" y="41"/>
+            <point key="canvasLocation" x="-239" y="107"/>
         </view>
     </objects>
 </document>

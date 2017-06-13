@@ -63,6 +63,10 @@
             [self.textDocumentProxy deleteBackward];//删除上个输入
         }
             break;
+        case 120:{
+            [self.textDocumentProxy insertText: @"\n"];
+        }
+            break;
             
         default:
         {
